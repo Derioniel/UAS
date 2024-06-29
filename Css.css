@@ -1,0 +1,227 @@
+/* Keseluruhan */
+body{
+    background-color: #FAFAFA;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+/* Header */
+div.header{
+    display: flex;
+    align-items: center;
+    background-color: #ff4a1c;
+    padding: 1em;
+}
+
+/* Header Navigasi */
+.kanan{
+    width: 100%;
+    text-align: center;
+}
+
+.navigasi a{
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+}
+
+/* Header Logo & Nama */
+.kiri{
+    width: 100%;
+    display: flex;
+}
+
+.gambar img{
+    width: 3em;
+}
+
+div.nama{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Isi Konten */
+
+.wrapper{
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.wrapper .pengertian{
+    width: 50%;
+    background-color: #ff4a1c;
+    margin-right: 0.3em;
+    text-align: center;
+    color: white;
+    padding-bottom: 3em;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.wrapper .manfaat{
+   width: 50%;
+    background-color: #ff4a1c;
+    margin-right: 0.3em;
+    text-align: center;
+    color: white;
+    padding-bottom: 3em;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.wrapper .penerapan{
+    width: 50%;
+    background-color: #ff4a1c;
+    text-align: center;
+    color: white;
+    padding-bottom: 3em;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 0.3em;
+}
+
+.wrapper .latihan{
+    width: 50%;
+    background-color: #ff4a1c;
+    text-align: center;
+    color: white;
+    padding-bottom: 3em;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* Button */
+.wrapper .pengertian a{
+    text-decoration: none;
+    background-color: #FAFAFA;
+    color: #ff4a1c;
+    border-radius: 6%;
+    padding: 0.4em;
+}
+
+.wrapper .manfaat a{
+    text-decoration: none;
+    background-color: #FAFAFA;
+    color: #ff4a1c;
+    border-radius: 6%;
+    padding: 0.4em;
+}
+
+.wrapper .penerapan a{
+    text-decoration: none;
+    background-color: #FAFAFA;
+    color: #ff4a1c;
+    border-radius: 6%;
+    padding: 0.4em;
+}
+
+.wrapper .latihan a{
+    text-decoration: none;
+    background-color: #FAFAFA;
+    color: #ff4a1c;
+    border-radius: 6%;
+    padding: 0.4em;
+}
+/* footer */
+footer{
+    background-color: #ff4a1c;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    left: 0;
+    
+    
+}
+
+
+/* Responsive styling */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .navigasi {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+    
+    .navigasi a {
+        display: inline-block;
+        margin-bottom: 0.5em;
+    }
+
+    .wrapper > div {
+        width: 100%;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 476px) {
+
+    .kiri{
+        width: 10%;
+    }
+    .gambar img{
+        width: 2em;
+    }
+
+    .nama{
+        display: none;
+    }
+    
+    .navigasi {
+        text-align: center;
+        width: 100%;
+        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .navigasi a {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+    .wrapper .pengertian{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .wrapper .manfaat{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .wrapper .penerapan{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .wrapper .latihan{
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    footer{
+        position:static;
+        width: auto;
+    }
+}

@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(gmbr.jpg) ;
+}
+
+/* Header Navigasi */
+div.header{
+    display: flex;
+    align-items: center;
+    background-color: #ff4a1c;
+    padding: 1em;
+}
+.kanan{
+    width: 100%;
+    text-align: center;
+}
+
+.navigasi a{
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+}
+
+/* Header Logo & Nama */
+.kiri{
+    width: 100%;
+    display: flex;
+}
+
+.gambar img{
+    width: 3em;
+}
+
+div.nama{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.isi {
+    background-color: #FFFFFF;
+    width: 90%;
+    max-width: 600px;
+    margin: 80px auto 0;
+    border-radius: 0.5%;
+    padding: 6%;
+    margin-bottom: 80px;
+}
+
+.isi h1 {
+    color: #ff4a1c;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3%;
+}
+
+.kuis {
+    padding: 4%;
+}
+
+.kuis h2 {
+    color: #ff4a1c;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+
+.jwb {
+    background-color: #FFFFFF;
+    color: #000;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    padding: 1.5%;
+    margin: 1.5%;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 2.5%;
+}
+
+.jwb:hover:not([disabled]) {
+    background-color: #ff4a1c;
+    color: #fff;
+}
+
+.jwb:disabled {
+    cursor: no-drop;
+}
+
+#next {
+    background-color: #ff4a1c;
+    color: #FFFFFF;
+    padding: 1%;
+    border: 0;
+    margin: 5% auto 0;
+    border-radius: 2%;
+    cursor: pointer;
+    font-weight: 500;
+    display: none;
+}
+
+#main-menu {
+    background-color: #ff4a1c;
+    color: #FFFFFF;
+    padding: 1%;
+    border: 0;
+    margin: 5% auto 0;
+    border-radius: 2%;
+    cursor: pointer;
+    font-weight: 500;
+    display: none;
+}
+
+.tombol{
+    margin-top: 4em;
+    display: flex;
+    justify-content: end;
+    }
+
+.sebelum a{
+    background-color: #ff4a1c;
+    color: #FAFAFA;
+    padding: 1em;
+    text-decoration: none;
+    /* margin-left: 2em; */
+    border-radius: 3%;
+    /* margin-top: 1em; */
+    justify-content: end;
+    display: flex;
+}
+
+.sesudah a{
+    background-color: #ff4a1c;
+    color: #FAFAFA;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 3%;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin-top: 1em;   */
+}
+
+.sesudah{
+    display: flex;
+    text-align: right;
+    justify-content: end;
+    margin-right: 0;
+}
+
+.correct {
+    background-color: #B6D094;
+}
+
+.incorrect {
+    background-color: #ED6B4F;
+}
+
+.footer{
+    background-color: #ff4a1c;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    bottom:0;
+    left: 0;
+    margin-top: 25px;
+    
+    
+}
+/* Responsive styling */
+
+/* Tablets */
+@media (max-width: 1025px) {
+    .kiri{
+        width: 10%;
+    }
+    .gambar img{
+        width: 2em;
+    }
+
+    .nama h3{
+        color: green;
+    }
+    
+    .navigasi {
+        text-align: center;
+        width: 100%;
+        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .navigasi a {
+        text-align: center;
+        font-size: 14px;
+        margin-left:1px;
+    }
+
+    .footer{
+        position:fixed;
+    }
+}
+
+   /* Mobile phones */
+   @media screen and (max-width: 476px) {
+
+    .kiri{
+        width: 10%;
+    }
+    .gambar img{
+        width: 2em;
+    }
+
+    .nama{
+        display: none;
+    }
+    
+    .navigasi {
+        text-align: center;
+        width: 100%;
+        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .navigasi a {
+        text-align: center;
+        font-size: 14px;
+        margin-left:1px;
+    }
+
+    .footer{
+        position:fixed;
+    }
+}

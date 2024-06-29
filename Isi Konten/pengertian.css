@@ -1,0 +1,144 @@
+/* Keseluruhan */
+body{
+    background-color: #FAFAFA;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Header Navigasi */
+div.header{
+    display: flex;
+    align-items: center;
+    background-color: #ff4a1c;
+    padding: 1em;
+}
+.kanan{
+    width: 100%;
+    text-align: center;
+}
+
+.navigasi a{
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+}
+
+/* Header Logo & Nama */
+.kiri{
+    width: 100%;
+    display: flex;
+}
+
+.gambar img{
+    width: 3em;
+}
+
+div.nama{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Isi */
+
+    div.pengertian h1{
+        text-align: center;
+        padding: 2em;
+    }
+
+div.pengertian p{
+    padding-left: 2em;
+    line-height: 1.5;
+    text-align: justify;
+    padding-right: 2em;
+}
+
+    div.pengertian img{
+        width: 100%;
+    }
+
+div.next a{
+    background-color: #ff4a1c;
+    color: #FAFAFA;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 3%;
+    margin-right: 10px;
+    }
+
+.next{
+    margin-bottom: 100px;
+    display: flex;
+    text-align: right;
+    justify-content: end;
+}
+
+/* footer */
+/* footer */
+.footer{
+    background-color: #ff4a1c;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 0.5em;
+    /* position: fixed; */
+    /* width: 100%; */
+    bottom:0;
+    left: 0;
+    
+    
+}
+
+/* Responsive styling */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .navigasi {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+    
+    .navigasi a {
+        display: inline-block;
+        margin-bottom: 0.5em;
+    }
+
+    .penerapan > div {
+        width: 100%;
+    }
+}
+
+   /* Mobile phones */
+   @media screen and (max-width: 476px) {
+
+    .kiri{
+        width: 10%;
+    }
+    .gambar img{
+        width: 2em;
+    }
+
+    .nama{
+        display: none;
+    }
+    
+    .navigasi {
+        text-align: center;
+        width: 100%;
+        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .navigasi a {
+        text-align: center;
+        font-size: 14px;
+        margin-left:1px;
+    }
+}

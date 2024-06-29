@@ -1,0 +1,97 @@
+/* Keseluruhan */
+body{
+    background-color: #FAFAFA;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Header Navigasi */
+div.header{
+    display: flex;
+    align-items: center;
+    background-color: #ff4a1c;
+    padding: 1em;
+}
+.kanan{
+    width: 100%;
+    text-align: center;
+}
+
+.navigasi a{
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+}
+
+/* Header Logo & Nama */
+.kiri{
+    width: 100%;
+    display: flex;
+}
+
+.gambar img{
+    width: 3em;
+}
+
+div.nama{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Isi */
+    div.sumber h1{
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+    
+    div.sumber p{
+        padding-left: 2em;
+    }
+
+
+/* footer */
+div.footer{
+    background-color: #ff4a1c;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 0.5em;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    left: 0;
+}
+
+   /* Mobile phones */
+   @media screen and (max-width: 476px) {
+
+    .kiri{
+        width: 10%;
+    }
+    .gambar img{
+        width: 2em;
+    }
+
+    .nama{
+        display: none;
+    }
+    
+    .navigasi {
+        text-align: center;
+        width: 100%;
+        place-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .navigasi a {
+        text-align: center;
+        font-size: 14px;
+    }
+}
